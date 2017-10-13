@@ -1,10 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({ name: 'favorite', pure:false })
+@Pipe({ name: 'favorite', pure: false })
 export class FavoritePipe implements PipeTransform {
 
   transform(contacts: any[], isFavorite: boolean) {
-    if(contacts == null) return null;
+    if (contacts == null) return null;
 
     let filteredContacts = contacts.filter(contact => contact.isFavorite == isFavorite);
 
@@ -26,7 +26,7 @@ export class FavoritePipe implements PipeTransform {
 
     return filteredContacts;
 
-    
+
 
   }
 }

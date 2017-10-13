@@ -3,9 +3,6 @@
     <div class="centerBlock">
       Contacts
     </div>
-
-    <!-- {{contacts | json}} -->
-
     <div class="panel panel-success ">
       <div class="panel-heading">
         <h3 class="panel-title"><strong>FAVORITE CONTACTS</strong></h3>
@@ -25,8 +22,7 @@
             <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
               <div class="row">
                 <h4>
-                    <span class="glyphicon" [ngClass]="contact.isFavorite ? 'glyphicon-star': 'glyphicon-star-empty'"></span>
-                    {{contact.name}} 
+                  <span class="glyphicon" [ngClass]="contact.isFavorite ? 'glyphicon-star': 'glyphicon-star-empty'"></span>                  {{contact.name}}
                 </h4>
               </div>
               <div class="row"><span class="contactName" *ngIf="contact.companyName != null || contact.companyName != ''">{{contact?.companyName}}</span>

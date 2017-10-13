@@ -50,5 +50,4 @@ export class ContactsComponent implements OnInit, DoCheck {
       this.contacts[itemIndex] = this.selectedContact;
     }
   }
-
 }
